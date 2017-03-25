@@ -1,0 +1,26 @@
+{
+  "name": "reason_native_example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "bsb -make-world",
+    "test": "exit 0",
+    "clean": "bsb -clean-world && rm -f finalOutput/*.js"
+  },
+  "dependencies": {
+    "react": "~15.4.1",
+    "react-dom": "^15.4.2",
+    "react-native": "0.42.3",
+    "reason-js": "^0.2.0",
+    "reason-react": "https://github.com/reasonml/reason-react.git"
+  },
+  "devDependencies": {
+    "bs-platform": "https://github.com/bloomberg/bucklescript.git",
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "react-test-renderer": "~15.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

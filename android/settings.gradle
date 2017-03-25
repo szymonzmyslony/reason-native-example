@@ -1,0 +1,3 @@
+rootProject.name = 'reason_native_example'
+
+include ':app'
