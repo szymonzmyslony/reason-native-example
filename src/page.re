@@ -4,7 +4,7 @@ let optionMap fn opt_value => switch opt_value {
   | Some value => Some (fn value)
 };
 
-/* module View = {
+module View = {
     external view : ReactRe.reactClass = "View" [@@bs.module "react-native"];
     let createElement
         accessible::(accessible:option bool)=?
@@ -15,7 +15,7 @@ let optionMap fn opt_value => switch opt_value {
           "accessible": Js.Undefined.from_opt (optionMap to_js_boolean accessible),
           "onClick": Js.Undefined.from_opt onClick
         };
-}; */
+};
 
 module Text = {
   type ellipsizeModeT = [
@@ -42,9 +42,9 @@ module Text = {
           | `clip => "clip") ellipsizeMode),
         "numberOfLines": Js.Undefined.from_opt numberOfLines
       };
-};
+}; */
 
-/* module Button = {
+module Button = {
   external button : ReactRe.reactClass = "Button" [@@bs.module "react-native"];
   let createElement
     accessibilityLabel::(accessibilityLabel:option string)=?
@@ -61,14 +61,14 @@ module Text = {
         "onPress": Js.Undefined.from_opt onPress,
         "title": Js.Undefined.from_opt title,
       }
-}; */
+};
 
-/* module ActionSheetIOS = {
+module ActionSheetIOS = {
   type actionSheetOptions = Js.t {. options: array string, cancelButtonIndex: int, descructiveButtonIndex: int, title: string, message: string };
   external showActionSheetWithOptions : actionSheetOptions -> (int -> unit) -> unit = "ActionSheetIOS.showActionSheetWithOptions" [@bs.val]
-}; */
+};
 
-/* module Dimensions = {
+module Dimensions = {
   type dim = Js.t {. width: float, height: float, scale: float, fontScale: float };
   external get : [
     | `window
@@ -110,9 +110,9 @@ module Keyboard = {
     | `keyboardDidChangeFrame
   ] [@bs.string]) => unit = "removeAllListeners" [@@bs.module "Keyboard"];
   external dismiss: unit => unit = "dismiss" [@@bs.module "Keyboard"];
-}; */
+};
 
-module NativeRoot = {
+/* module NativeRoot = {
   include ReactRe.Component;
   type props = ();
   let name = "NativeRoot";
@@ -120,10 +120,10 @@ module NativeRoot = {
     Js.log "clicked!";
     Some { presses: state.presses + 1 }
   }; */
-  let render {props, state, updater} => {
-      <Text >
-        (ReactRe.stringToElement "alpha bravo charlie delta echo foxtrot golf hotel india juliet kilo")
-      </Text>
+  let render {props, updater} => {
+      <native.View accessible=true>
+
+      </native.View>
   };
   /* let render {props, updater} =>
     <div onClick=(updater handleClick)> (ReactRe.stringToElement "hello") </div>; */
@@ -131,4 +131,4 @@ module NativeRoot = {
 
 include ReactRe.CreateComponent NativeRoot;
 
-let createElement = wrapProps ();
+let createElement = wrapProps (); */

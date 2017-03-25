@@ -2561,9 +2561,8 @@ reason-js@^0.2.0:
   dependencies:
     bs-promise BuckleTypes/bs-promise
 
-"reason-react@https://github.com/reasonml/reason-react.git":
+"reason-react@file:../reason-react":
   version "0.0.2"
-  resolved "https://github.com/reasonml/reason-react.git#889209f654d3013a3eccc1854be639df7baf67b2"
 
 rebound@^0.0.13:
   version "0.0.13"
