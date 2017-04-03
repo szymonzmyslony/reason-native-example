@@ -2,7 +2,7 @@
 * @providesModule App
 * @flow
 */
-var NativeRoot = require("../lib/js/src/page");
+var NativeRoot = require("../lib/js/src/page").comp;
 import React, { Component } from "react";
 import { AppRegistry, StyleSheet, Text, View } from "react-native";
 export default class reason_native_example extends Component {
