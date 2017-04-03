@@ -1,3 +1,5 @@
+open Native;
+
 module NativeRoot = {
   include ReactRe.Component.JsProps;
   type props = ();
@@ -6,7 +8,7 @@ module NativeRoot = {
   let jsPropsToReasonProps = Some (fun _ => ());
 
   let render {props} => {
-      <native.Button/>
+      <View />
   };
 
 };
