@@ -15,9 +15,9 @@
     "reason-react": "https://github.com/szymonzmyslony/reason-react.git"
   },
   "devDependencies": {
-    "bs-platform": "https://github.com/bloomberg/bucklescript.git",
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
+    "bs-platform": "https://github.com/bloomberg/bucklescript.git",
     "react-test-renderer": "~15.4.1"
   },
   "jest": {
