@@ -809,11 +809,11 @@ braces@^1.8.2:
 
 "bs-platform@https://github.com/bloomberg/bucklescript.git":
   version "1.6.1"
-  resolved "https://github.com/bloomberg/bucklescript.git#23539bfeeabd94651b005142043052e8f1ab4a2c"
+  resolved "https://github.com/bloomberg/bucklescript.git#cb5d0cac81baf9952925001b141aea5effdb06d6"
 
 "bs-promise@github:buckletypes/bs-promise":
   version "0.3.0"
-  resolved "https://codeload.github.com/buckletypes/bs-promise/tar.gz/b2467ba5288c85b172b4e98daf05493f273c6c38"
+  resolved "https://codeload.github.com/buckletypes/bs-promise/tar.gz/4b1732a9ec8f46b530ae0ef076e8eff695e0eae2"
 
 bser@1.0.2:
   version "1.0.2"
@@ -2559,7 +2559,7 @@ reason-js@^0.2.0:
 
 "reason-react@https://github.com/szymonzmyslony/reason-react.git":
   version "0.0.2"
-  resolved "https://github.com/szymonzmyslony/reason-react.git#d0059d32e2ce1bf29eb25d1ac1ebee50fae7318d"
+  resolved "https://github.com/szymonzmyslony/reason-react.git#184f8cba0ed97835c103e49f27e0d7ead4b3696a"
 
 rebound@^0.0.13:
   version "0.0.13"
