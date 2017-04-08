@@ -39,14 +39,30 @@ module View = {
 };
 
 module TextInput = {
+  type autoCapitalize = None | Sentences | Words | Characters;
+
+  let translateAutoCapitalize = fun mode =>
+  switch mode {
+  | None => "none"
+  | Sentences  => "sentences"
+  | Words  => "words"
+  | Characters => "characters"
+};
+
   external text_input : ReactRe.reactClass = "TextInput" [@@bs.module "react-native"];
+  type style;
+  external createStyle : backgroundColor::string? => flex::int? => unit => style = ""
+   [@@bs.obj];
+
+
+
   let createElement
-      /* style::(style: option style)=?, */
+      style::(style: option style)=?
       autoCorrect::(accessible: option bool)=? =>
     ReactRe.wrapPropsShamelessly
       text_input
       {
-        /* "style": Js.Undefined.def style, */
+        "style": Js.Undefined.from_opt style,
         "autoCorrect": Js.Undefined.from_opt (optionMap to_js_boolean accessible)
       };
 };

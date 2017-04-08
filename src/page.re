@@ -3,7 +3,8 @@ open Native;
 let styleshaeet =
   StyleSheet.create {
     "view": View.createStyle flex::1 backgroundColor::"#cda" (),
-    "view1": View.createStyle flex::1 backgroundColor::"#abc" ()
+    "view1": View.createStyle flex::1 backgroundColor::"#abc" (),
+    "text": TextInput.createStyle flex::1 backgroundColor::"#abc" (),
   };
 
 module NativeRoot = {
@@ -15,8 +16,7 @@ module NativeRoot = {
   let jsPropsToReasonProps = Some (fun _ => ());
   let render {props} =>
     <View style=styleshaeet##view >
-      <View style=styleshaeet##view1 />
-      <View style=styleshaeet##view />
+    <TextInput style=styleshaeet##text/>
     </View>;
 };
 
